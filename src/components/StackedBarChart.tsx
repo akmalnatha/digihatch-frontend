@@ -7,10 +7,11 @@ type dataChart = {
 };
 
 interface StackedBarChartProps {
+  category: string[];
   data: dataChart[];
 }
 
-function StackedbarChart({ data }: StackedBarChartProps) {
+function StackedbarChart({ data, category }: StackedBarChartProps) {
   return (
     <>
       <div className="container-fluid">
@@ -58,6 +59,7 @@ function StackedbarChart({ data }: StackedBarChartProps) {
               tooltip: {
                 enabled: false,
               },
+              categories: category
             },
             yaxis: {
               show: false,

@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
-import { NavLink } from "react-router-dom";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { BsBoxSeam, BsPersonGear, BsPerson } from "react-icons/bs";
 import { BiLogOut } from "react-icons/bi";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 interface NavbarProps {
   children?: ReactNode;
@@ -28,8 +28,8 @@ function Navbar({ children, active }: NavbarProps) {
             <p className="text-mono-600 text-[20px]">2023/2024</p>
           </div>
           <div className="flex flex-col gap-[16px]">
-            <div
-              // to="/"
+            <NavLink
+              to="/"
               className={`${
                 active == 0
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -38,9 +38,9 @@ function Navbar({ children, active }: NavbarProps) {
             >
               <LuLayoutDashboard />
               <p className="text-[20px]">Dashboard</p>
-            </div>
-            <div
-              // to="/"
+            </NavLink>
+            <NavLink
+              to="/list"
               className={`${
                 active == 1
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -49,9 +49,9 @@ function Navbar({ children, active }: NavbarProps) {
             >
               <BsBoxSeam />
               <p className="text-[20px]">List Order</p>
-            </div>
-            <div
-              // to="/"
+            </NavLink>
+            <NavLink
+              to="/track"
               className={`${
                 active == 2
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -60,9 +60,9 @@ function Navbar({ children, active }: NavbarProps) {
             >
               <LiaShippingFastSolid />
               <p className="text-[20px]">Track Order</p>
-            </div>
-            <div
-              // to="/"
+            </NavLink>
+            <NavLink
+              to="/driver"
               className={`${
                 active == 3
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -70,10 +70,10 @@ function Navbar({ children, active }: NavbarProps) {
               } text-[24px] py-[8px] hover:text-purple-ternary active:text-purple-secondary hover:border-purple-ternary active:border-purple-secondary flex items-center gap-4 cursor-pointer`}
             >
               <BsPersonGear />
-              <p className="text-[20px]">List User</p>
-            </div>
-            <div
-              // to="/"
+              <p className="text-[20px]">List Driver</p>
+            </NavLink>
+            <NavLink
+              to="/profile"
               className={`${
                 active == 4
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -82,24 +82,24 @@ function Navbar({ children, active }: NavbarProps) {
             >
               <BsPerson />
               <p className="text-[20px]">Profile</p>
-            </div>
+            </NavLink>
           </div>
         </div>
         <div className="flex flex-col gap-[15px]">
-          <div
-            // to="/"
+          <NavLink
+            to="/login"
             className={`text-[24px] px-[24px] py-[8px] text-error flex items-center gap-4 cursor-pointer`}
           >
             <BiLogOut/>
             <p className="text-[20px] font-bold">Logout</p>
-          </div>
+          </NavLink>
           <hr />
-          <p className="p-6 text-mono-600">
+          <p className="p-6 text-mono-600 text-[12px]">
           MediCargo, PT Dexa Group | <br />All Rights Reserved 
           </p>
         </div>
       </div>
-      <div className="flex grow">
+      <div className="flex grow overflow-auto">
         {children}
       </div>
     </div>
