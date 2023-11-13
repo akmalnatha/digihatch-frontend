@@ -13,7 +13,8 @@ export default {
         purple: {
           primary: "#5A3D99",
           secondary: "#6F4BBD",
-          ternary: "#8057D9"
+          ternary: "#8057D9",
+          light: "#D5D5F5"
         },
         orange: {
           primary: "#F36D26",

@@ -1,4 +1,4 @@
-import "./style.css";
+import "../style.css";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FaLocationDot } from "react-icons/fa6";
 import StackedbarChart from "../../components/StackedBarChart";

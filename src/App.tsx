@@ -2,6 +2,7 @@ import { Outlet, Route, RouterProvider, Routes, createBrowserRouter } from 'reac
 import './App.css'
 import Dashboard from './pages/dashboard/page'
 import Navbar from "./components/Navbar";
+import Track from './pages/track/page';
 
 const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
@@ -42,7 +43,7 @@ function Root() {
         } />
         <Route path="/track" element={
         <Navbar active={2}>
-          <Dummy title={"Track Order"} />
+          <Track/>
         </Navbar>
         } />
         <Route path="/driver" element={
