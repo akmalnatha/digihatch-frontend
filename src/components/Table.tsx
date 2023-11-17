@@ -140,7 +140,7 @@ function Table({
                 return (
                   <th
                     key={idx}
-                    className="h-auto w-auto border-collapse text-white bg-blue-secondary p-[8px] text-center truncate"
+                    className="h-auto w-auto border-collapse text-white bg-purple-secondary p-[8px] text-center truncate"
                   >
                     {item}
                   </th>

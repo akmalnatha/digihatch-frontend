@@ -3,6 +3,7 @@ import './App.css'
 import Dashboard from './pages/dashboard/page'
 import Navbar from "./components/Navbar";
 import Track from './pages/track/page';
+import Login from './pages/login/page';
 
 const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
@@ -28,7 +29,7 @@ function App() {
 function Root() {
   return (
     <Routes>
-      <Route path="/login" element={<Dummy title={"Login"} />} />
+      <Route path="/login" element={<Login/>} />
       <Route path="*" element={<Dummy title={"Not Found"} />} />
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={

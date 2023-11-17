@@ -40,7 +40,10 @@ export default {
           600: "#777879",
           700: "#1C1C1C",
         },
-        good: "#41FF5F",
+        green: {
+          dark: "#40E85B",
+          light: "#41FF5F"
+        },
         error: "#FF575F",
       },
     },

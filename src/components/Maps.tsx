@@ -21,9 +21,6 @@ const Maps = ({aspectHeight, aspectWidth}:{aspectHeight:number; aspectWidth:numb
     googleMapsApiKey: "AIzaSyCIhUtglT6YFezdl6bj0-ttZhcYiHrC90c",
   });
 
-  console.log(aspectHeight)
-  console.log(aspectWidth)
-
 //   const [map, setMap] = useState(null);
 
 //   const onLoad = useCallback(function callback(map: any) {
@@ -65,6 +62,7 @@ const Maps = ({aspectHeight, aspectWidth}:{aspectHeight:number; aspectWidth:numb
               />
             ))} */}
             <Marker position={{ lat: -6.914744, lng: 107.60981 }}></Marker>
+            <Marker position={{ lat: -6.824744, lng: 107.70732 }}></Marker>
           </GoogleMap>
         </div>
       ) : (

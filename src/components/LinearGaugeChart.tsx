@@ -10,11 +10,11 @@ interface LinearGaugeProps {
 
 export function LinearGaugeChart({chartType, format, pointerType, containerWidth, containerHeight}: LinearGaugeProps) {
     return(
-        <LinearGaugeComponent container={ { width: containerWidth, type: chartType, height: containerHeight, backgroundColor:"#DFD5F5" } } width='50%' margin= {{ left: 40, right: 0, top: 0, bottom: 0 }} >
+        <LinearGaugeComponent container={ { width: containerWidth, type: chartType, height: containerHeight, backgroundColor:"#FEFBF4" } } width='50%' margin= {{ left: 40, right: 0, top: 0, bottom: 0 }} >
         <AxesDirective>
             <AxisDirective minimum={0} maximum={100} labelStyle={ { format: format } }>
                 <PointersDirective>
-                    <PointerDirective value={50} width={15} type={pointerType} color='#5A3D99'>
+                    <PointerDirective value={50} width={15} type={pointerType} color='#8057D9'>
                     </PointerDirective>
                 </PointersDirective>
                 <RangesDirective>

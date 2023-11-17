@@ -162,7 +162,7 @@ function Dashboard() {
                 </h2>
                 <div className="flex gap-[20px] items-center">
                   <div className="flex items-center gap-[10px]">
-                    <div className="bg-good rounded-full w-[20px] h-[20px]"></div>
+                    <div className="bg-green-light rounded-full w-[20px] h-[20px]"></div>
                     <span className="text-[16px] font-semibold text-blue-dark">
                       SAFE
                     </span>
