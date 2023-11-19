@@ -40,7 +40,7 @@ function Navbar({ children, active }: NavbarProps) {
               <p className="text-[20px]">Dashboard</p>
             </NavLink>
             <NavLink
-              to="/list"
+              to="/order"
               className={`${
                 active == 1
                   ? "border-l-4 border-purple-secondary text-purple-secondary box-border font-bold px-[20px]"
@@ -48,7 +48,7 @@ function Navbar({ children, active }: NavbarProps) {
               } text-[24px] py-[8px] hover:text-purple-ternary active:text-purple-secondary hover:border-purple-ternary active:border-purple-secondary flex items-center gap-4 cursor-pointer`}
             >
               <BsBoxSeam />
-              <p className="text-[20px]">List Order</p>
+              <p className="text-[20px]">List Orders</p>
             </NavLink>
             <NavLink
               to="/track"
